@@ -305,7 +305,7 @@
 				"exec": [
 					"const timestamp = Date.now();",
 					"",
-					"const body = request.body ? request.body : '';",
+					"const body = pm.request.body ? pm.request.body : '';",
 					"const method = request.method;",
 					"const [, endpoint] = request.url.split('{{apiUrl}}');",
 					"",
